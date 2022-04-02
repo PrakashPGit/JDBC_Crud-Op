@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Validation_Project</display-name>
+  <welcome-file-list>
+    <welcome-file>Index.html</welcome-file>
+ 
+  </welcome-file-list>
+  
+  
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name> 
+  <url-pattern>/bio</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>Login_Validation.Login</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  <servlet-name>Welcome_servlet</servlet-name> 
+  <url-pattern>/ws</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Welcome_servlet</servlet-name>
+  <servlet-class>Login_Validation.Welcome_servlet</servlet-class>
+  </servlet>
+  
+</web-app>
